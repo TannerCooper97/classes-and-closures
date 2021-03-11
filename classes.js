@@ -106,15 +106,15 @@ class ProgressiveManager extends Manager {
     super.hire()
 
     if (this.reports.length >= 1 && this.reports.length <= 3){
-      return this.title = 'Barely Manager'
+       this.title = 'Barely Manager'
     } else if (this.reports.length >= 4 && this.reports.length <=10){
-      return this.title = 'Mostly Manager'
+      this.title = 'Mostly Manager'
     } else if (this.reports.length >= 11 && this.reports.length <= 50){
-      return this.title = 'Manager'
+       this.title = 'Manager'
     } else if (this.reports.length >= 51 && this.reports.length <= 100){
-      return this.title = 'Manager Plus'
+       this.title = 'Manager Plus'
     } else if (this.reports.length >= 101) {
-      return this.title = 'Bestest Manager'
+      this.title = 'Bestest Manager'
     }
   }
   fire(){
